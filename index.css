@@ -9,12 +9,15 @@ ul {
 }
 
 
+a {
+  text-decoration: none;
+}
 
 /* 배경화면 */
 #top {
   width: 100%;
   height: 94vh;
-  background-color: rgb(71, 142, 142);
+  background-color: rgb(22, 150, 162);
 }
 
 .folders {
@@ -49,9 +52,9 @@ span {
 
 
 /* 모달창 */
-.computerModal,
+/* .computerModal, */
 .aboutModal,
-.timelineModal,
+/* .timelineModal, */
 .portfolioModal,
 .contactModal {
   position: relative;
@@ -66,7 +69,18 @@ span {
 .computerModal {
   position: relative;
   width: 40%;
-  height: 350px;
+  height: 250px;
+  left: 450px;
+  bottom: 500px;
+  background-color: #b6b6b6;
+  display: none;
+}
+
+
+.timelineModal {
+  position: relative;
+  width: 40%;
+  height: 280px;
   left: 450px;
   bottom: 500px;
   background-color: #b6b6b6;
@@ -121,6 +135,76 @@ span {
   width: 100%;
 }
 
+/* inner 밑부분 */
+
+/* 내 컴퓨터 */
+.comInnerLeft {
+  border-style: outset;
+  border-color: rgb(255, 255, 255) rgb(153, 153, 153) rgb(153, 153, 153) rgb(255, 255, 255);
+  width: 70%;
+  position: relative;
+  top: 132px;
+  height: 30px;
+  display: inline-block;
+}
+
+.comInnerRight {
+  border-style: outset;
+  border-color: rgb(255, 255, 255) rgb(153, 153, 153) rgb(153, 153, 153) rgb(255, 255, 255);
+  position: relative;
+  width: 28.5%;
+  display: inline-block;
+  left: 70.8%;
+  height: 30px;
+  top: 93px;
+}
+
+/* 타임라인 */
+.tlInnerLeft {
+  border-style: outset;
+  border-color: rgb(255, 255, 255) rgb(153, 153, 153) rgb(153, 153, 153) rgb(255, 255, 255);
+  width: 70%;
+  position: relative;
+  top: 49px;
+  height: 30px;
+  display: inline-block;
+}
+
+.tlInnerRight {
+  border-style: outset;
+  border-color: rgb(255, 255, 255) rgb(153, 153, 153) rgb(153, 153, 153) rgb(255, 255, 255);
+  position: relative;
+  width: 28.5%;
+  display: inline-block;
+  left: 70.8%;
+  height: 30px;
+  top: 10px;
+}
+
+/* 포트폴리오 */
+.portInnerLeft {
+  border-style: outset;
+  border-color: rgb(255, 255, 255) rgb(153, 153, 153) rgb(153, 153, 153) rgb(255, 255, 255);
+  width: 70%;
+  position: relative;
+  top: 83px;
+  height: 30px;
+  display: inline-block;
+}
+
+.portInnerRight {
+  border-style: outset;
+  border-color: rgb(255, 255, 255) rgb(153, 153, 153) rgb(153, 153, 153) rgb(255, 255, 255);
+  position: relative;
+  width: 28.5%;
+  display: inline-block;
+  left: 70.8%;
+  height: 30px;
+  top: 44px;
+}
+
+
+
 .innerLeft {
   border-style: outset;
   border-color: rgb(255, 255, 255) rgb(153, 153, 153) rgb(153, 153, 153) rgb(255, 255, 255);
@@ -142,6 +226,60 @@ span {
   top: 6px;
 }
 
+
+
+/* alert */
+.alert {
+  /* width: 300px; */
+  height: 100px;
+  display: none;
+}
+
+
+.leftAlert {
+  transform: rotate(-90deg);
+  width: 248px;
+  height: 45%;
+  background-color: blue;
+  color: white;
+  position: relative;
+  /* top: -17px; */
+  display: inline-block;
+  /* height: 96px; */
+  bottom: 106.5px;
+  right: 102px;
+}
+
+
+.rotate {
+  left: 65px;
+  position: relative;
+  top: 3px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.rightAlert {
+  width: 180px;
+  height: 248px;
+  background-color: #b6b6b6;
+  color: white;
+  position: relative;
+  bottom: 253px;
+  left: 45px;
+}
+
+.rightAlert>div {
+  height: 25%;
+}
+
+.rightAlert>div:hover {
+  background-color: blue;
+}
+
+.rightAlert>div>p {
+  margin: 0;
+}
 
 /* 시작줄 */
 #bottom {
@@ -189,3 +327,34 @@ button {
   line-height: 5vh;
   text-align: center;
 }
+
+
+
+
+
+/* 타이핑css */
+p.typing-txt {
+  display: none;
+}
+
+.typing {
+  /*position: absolute;*/
+  display: inline-block;
+  animation-name: cursor;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+
+/* @keyframes cursor {
+  0% {
+    border-right: 1px solid #fff
+  }
+
+  50% {
+    border-right: 1px solid #000
+  }
+
+  100% {
+    border-right: 1px solid #fff
+  }
+} */
